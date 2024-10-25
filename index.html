@@ -1,35 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="style.css">
 
-    </head>
-    <body>
-    <div class="container">
-        <div >
-            <h1 class = "header_text">I love you baby, do you love me too?</h1>
-            <h1 class = "header_text">Are we staying together forever?</h1>
-        </div> 
-        <div class="gif_container">
-            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamg2cGdjdXUwMGtrNnhjc2p6cjlmdWF4NWFsbXp5MmV6dnRrdzhxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tshmvVDvKNmaXZ2fCN/giphy.webp" alt="Cute gif for you baby">
-        </div>
-        <div class = "buttons">
-            <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-            <button class="btn" id = "noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-            <script>
-                function nextPage() {
-                    window.location.href = "yes.html";                                                     
-                }
+        </head>
+        <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">I love you baby, do you love me too?</h1>
+                <h1 class = "header_text">Are we staying together forever?</h1>
+            </div> 
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamg2cGdjdXUwMGtrNnhjc2p6cjlmdWF4NWFsbXp5MmV6dnRrdzhxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tshmvVDvKNmaXZ2fCN/giphy.webp" alt="Cute gif for you baby">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id = "noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";                                                     
+                    }
 
-                function moveButton() {
-                    var x Math.random() * (window.InnerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                    var y = Math.random() * (window.InnerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                    document.getElementById('noButton').style.left = `${x}px`;
-                    document.getElementById('noButton').style.top = `${y}px`;
-                }
-            </script>
+                    function moveButton() {
+                        var x Math.random() * (window.InnerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.InnerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script>
+            </div>
         </div>
-    </div>
 
     </body>
 </html>
